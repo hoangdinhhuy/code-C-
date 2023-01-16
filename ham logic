@@ -1,0 +1,98 @@
+#include <stdio.h>
+#include <math.h>
+//ham logic
+//1.giaithua, vd:nhap n va tinh n!
+/*long long gt(int n){
+	long long res = 1;
+	for(int i = 1; i <= n; i++){
+		res *= i;
+	}
+	return res;
+}
+int main(){
+	int n;
+	scanf("%d",&n);
+	printf("%lld",gt(n));
+} */
+
+//2.so nguyen to (la so chi chia het cho 1 va chinh no)
+//nhap vao n va in ra yes neu n la so nguyen to , no neu khong phai
+/*long long nguyento(long long n){
+	if (n < 2) return 0;
+	for(long long i = 2; i <= sqrt(n); i++){
+		if(n % i == 0) return 0;
+		if()
+		else return 1;
+	}
+	return 1;
+}
+
+int main(){
+	long long n;
+	scanf("%lld",&n);
+	if(nguyento(n) == 1) printf("yes");
+	else printf("no");
+}*/
+
+//3.tong uoc,dem uoc (uoc la nhung so duoc chia het boi N)
+//nhap n va ra in ra tong uoc cua n va dem so luong n
+/*int tong(int n){
+	int sum = 0;
+	for(int i = 1; i <= sqrt(n); i++){
+		if(n % i == 0){
+			sum += i;
+			if(n / i != i) sum += n / i;
+		}	
+	}
+	return sum;
+}
+int dem(int n){
+	int count = 0;
+	for(int i = 1; i <= sqrt(n); i++){
+		if(n % i == 0){
+			++count;
+				if(n/i != i) ++count;
+		}
+	}
+	return count;
+}
+
+int main(){
+	int n;
+	scanf("%d", &n);
+	printf("%d\n", tong(n));
+	printf("%d",dem(n));
+} */
+
+//4.so chinh phuong(la nhung so can bac 2 ra so nguyen )
+//nhap vao n va kiem tra n co phai la so chinh phuong hay kh
+/*int cp(long long n){
+	int can = sqrt(n);
+	if(1ll * can * can == n)	return 1;
+	else return 0;
+	return can;
+}
+
+int main(){
+	int n;
+	scanf("%d", &n);
+	printf("%d",cp(n));
+} */
+//5.so hoan hao(la nhung so uoc cua no' va khong tinh chinh no)
+//check so hoan hao
+/*int hh(long long n){
+	int sum = 0;
+	for(int i = 1; i <= sqrt(n);i++){
+		if(n % i == 0){
+			sum += i;
+			if(i != n / i) sum += n / i;
+		}
+	}
+	return sum - n == n;
+}
+
+int main(){
+	int n;
+	scanf("%d", &n);
+	printf("%d\n", hh(n));
+} */
