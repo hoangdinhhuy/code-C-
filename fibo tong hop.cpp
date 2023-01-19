@@ -33,7 +33,7 @@ void inFibo (int n){
 long long innFibo(int n){
 if(n == 1 || n == 2) return n;
 long long fn1 = 0, fn2 = 1, fn;
-for(int i = 2; i < n; i++){
+for(int i = 2; i <= n; i++){
 	fn = fn1 + fn2;
 	fn1 = fn2;
 	fn2 = fn;
