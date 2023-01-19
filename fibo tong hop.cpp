@@ -13,10 +13,10 @@
 		return 0; // neu trong vong for khong co dap an thi in ra 0;	
 	}
 	
-//in ra fibo dau tien den n  : 0 => n
+//in ra fibo dau tien den n-1 : 0 => n-1
 void inFibo (int n){
 	if(n == 1) printf("0");
-	else if (n == 2) printf("1");
+	else if (n == 2) printf("0 1");
 	else{
 		printf("0 1 ");
 		long long  fn1 = 0, fn2 = 1;
